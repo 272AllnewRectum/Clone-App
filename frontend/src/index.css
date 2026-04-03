@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --font-inter: "Inter" , sans-serif; 
+}
+
+@layer utilities {
+    .font-inter {
+        font-family: var(--font-inter);
+    }
+}

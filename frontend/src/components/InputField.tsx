@@ -2,12 +2,16 @@ interface InputFieldProps {
   label: string;
   title: string;
   type?: "text" | "email" | "password";
+  value?: string;
+  onChange?: (e:React.ChangeEvent<HTMLInputElement>) => void
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
   label,
   title,
   type = "text",
+  value,
+  onChange
 }) => {
   return (
     <div className="font-inter max-w-[30vh] ">
@@ -17,6 +21,8 @@ export const InputField: React.FC<InputFieldProps> = ({
       <input
         type={type}
         placeholder={title}
+        value={value}
+        onChange={onChange}
         className="w-full p-[0.875rem] text-[0.8rem] border-[1.5px] border-black rounded-lg shadow-[2.5px_3px_0_#000] outline-none transition-all duration-200 focus:shadow-[5.5px_7px_0_#000] "
       />
     </div>

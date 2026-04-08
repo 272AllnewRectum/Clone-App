@@ -23,7 +23,7 @@ export const Info: React.FC<InfoProps> = ({ children, onClick , states="login"})
     <div className="flex flex-col justify-center text-center font-inter min-h-[65vh] min-w-[50vh]">
       <div className="border border-black/10 shadow-[5.5px_6px_0_#000] rounded-4xl p-9">
         <span className="text-3xl font-bold mt-[4vh]">{theme.topic}</span>
-        <div className="flex flex-col justify-center items-center mt-9 gap-3">
+        <div className="flex flex-col justify-center items-center mt-9 gap-4">
           {children}
         </div>
         <div className="font-inter pt-[1vh]">
